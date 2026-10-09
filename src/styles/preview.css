@@ -1,0 +1,141 @@
+
+.preview-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f5f0ff;
+  color: #30234a;
+}
+
+.preview-container,
+.portfolio-card {
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px #38205b12;
+}
+
+.preview-container {
+  padding: 32px;
+  text-align: center;
+}
+
+.preview-container a,
+.preview-actions a {
+  color: #7850c8;
+  text-decoration: none;
+}
+
+.preview-actions {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.preview-actions button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #7850c8;
+  color: white;
+  cursor: pointer;
+}
+
+.portfolio-hero {
+  padding: 60px 35px;
+  background: linear-gradient(135deg, #7850c8, #b8a0ed);
+  color: white;
+  overflow-wrap: anywhere;
+}
+
+.portfolio-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.portfolio-hero h1 {
+  margin: 15px 0 8px;
+  font-size: clamp(30px, 6vw, 48px);
+}
+
+.portfolio-hero h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.portfolio-hero a {
+  color: white;
+}
+
+.portfolio-section {
+  padding: 28px 35px;
+  border-bottom: 1px solid #eee7f8;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.portfolio-section h2 {
+  margin: 0 0 12px;
+  color: #7850c8;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #eee7ff;
+  color: #6138b1;
+}
+
+.portfolio-projects {
+  white-space: pre-wrap;
+}
+
+.portfolio-footer {
+  padding: 22px;
+  text-align: center;
+  color: #8b8198;
+  font-size: 13px;
+}
+
+@media print {
+  .preview-page {
+    padding: 0;
+    background: white;
+  }
+
+  .preview-actions {
+    display: none;
+  }
+
+  .portfolio-card {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .preview-page {
+    padding: 18px 12px;
+  }
+
+  .portfolio-hero {
+    padding: 38px 22px;
+  }
+
+  .portfolio-section {
+    padding: 22px;
+  }
+
+  .preview-actions {
+    flex-wrap: wrap;
+  }
+}

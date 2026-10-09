@@ -1,0 +1,176 @@
+
+.simple-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #24352d;
+  font-family: Arial, sans-serif;
+}
+
+.simple-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  border-bottom: 1px solid #e6ebe7;
+}
+
+.simple-logo {
+  color: #244d3b;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.simple-nav button {
+  padding: 10px 16px;
+  background: #244d3b;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.simple-hero {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 90px 24px 65px;
+  text-align: center;
+}
+
+.simple-eyebrow,
+.simple-label {
+  color: #63816e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.simple-hero h1 {
+  margin: 18px 0 10px;
+  font-size: clamp(38px, 7vw, 64px);
+  letter-spacing: -2px;
+}
+
+.simple-hero h2 {
+  color: #63816e;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.simple-intro {
+  max-width: 620px;
+  margin: 24px auto;
+  color: #69766e;
+  line-height: 1.8;
+}
+
+.simple-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 22px;
+  margin: 25px 0;
+  color: #53645a;
+  font-size: 14px;
+}
+
+.simple-hero > a {
+  color: #244d3b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.simple-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.simple-section {
+  padding: 32px 0;
+  border-top: 1px solid #e6ebe7;
+}
+
+.simple-section h2 {
+  margin: 12px 0;
+  font-size: 26px;
+}
+
+.simple-section > p:not(.simple-label) {
+  color: #69766e;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.simple-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.simple-skills span {
+  padding: 9px 14px;
+  background: #edf3ee;
+  color: #315941;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.simple-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 35px;
+  padding: 25px 8%;
+  background: #f5f8f5;
+  color: #637168;
+  font-size: 13px;
+}
+
+.simple-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px;
+}
+
+.simple-actions a,
+.simple-empty a {
+  color: #244d3b;
+  font-weight: 700;
+}
+
+.simple-empty {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .simple-nav {
+    padding: 18px;
+  }
+
+  .simple-hero {
+    padding-top: 55px;
+  }
+
+  .simple-contact {
+    flex-direction: column;
+  }
+
+  .simple-footer {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .simple-nav button,
+  .simple-actions {
+    display: none;
+  }
+
+  .simple-page {
+    background: white;
+  }
+}

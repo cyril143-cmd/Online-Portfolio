@@ -1,0 +1,528 @@
+
+.modern-page {
+  min-height: 100vh;
+  background: #f5f8f6;
+  color: #24473e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modern-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 5%;
+  background: #fff;
+  border-bottom: 1px solid #e6eee8;
+}
+
+.modern-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #24473e;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.modern-brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 10px;
+  background: #d9eee1;
+  color: #2e7355;
+}
+
+.modern-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.modern-nav-links a {
+  color: #48675a;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.modern-print {
+  padding: 11px 17px;
+  border: 0;
+  border-radius: 8px;
+  background: #28664c;
+  color: white;
+  cursor: pointer;
+}
+
+.modern-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 24px;
+  max-width: 1500px;
+  margin: 24px auto;
+  padding: 0 25px;
+}
+
+.modern-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 0;
+}
+
+.modern-sidebar-label,
+.modern-eyebrow {
+  color: #638776;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.modern-sidebar-label {
+  margin-bottom: 14px;
+}
+
+.modern-sidebar > a {
+  padding: 13px 12px;
+  border-radius: 9px;
+  color: #426657;
+  text-decoration: none;
+}
+
+.modern-sidebar > a:hover {
+  background: #e3efe7;
+}
+
+.modern-sidebar-quote {
+  margin-top: auto;
+  padding-top: 65px;
+  color: #638776;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.modern-main {
+  min-width: 0;
+}
+
+.modern-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 175px minmax(0, 1fr) 100px;
+  align-items: center;
+  gap: 28px;
+  overflow: hidden;
+  padding: 38px;
+  border: 1px solid #e1eee3;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #e1f0e3, #f7faf5 65%, #d6e9db);
+}
+
+.modern-photo-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.modern-profile-photo,
+.modern-profile-placeholder {
+  width: 100%;
+  height: 100%;
+  border: 5px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 20px #315e4218;
+}
+
+.modern-profile-placeholder {
+  display: grid;
+  place-items: center;
+  background: #d0e8d7;
+  color: #28664c;
+  font-size: 58px;
+  font-weight: 700;
+}
+
+.modern-online-dot {
+  position: absolute;
+  right: 7px;
+  bottom: 9px;
+  width: 19px;
+  height: 19px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: #46a76c;
+}
+
+.modern-intro {
+  min-width: 0;
+}
+
+.modern-eyebrow {
+  margin: 0 0 8px;
+}
+
+.modern-intro h1 {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #204b40;
+  font-size: clamp(30px, 4vw, 48px);
+  letter-spacing: -1.5px;
+}
+
+.modern-intro h2 {
+  margin: 8px 0 14px;
+  color: #478166;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modern-about-text {
+  max-width: 650px;
+  color: #506e60;
+  font-size: 15px;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.modern-quick-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 20px;
+  color: #426657;
+  font-size: 13px;
+}
+
+.modern-quick-contact span {
+  overflow-wrap: anywhere;
+}
+
+.modern-social-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #28664c;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.modern-hero-decoration {
+  color: #548267;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 1.4;
+  transform: rotate(-8deg);
+}
+
+.modern-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.modern-column {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  min-width: 0;
+}
+
+.modern-card {
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid #e6eee8;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 14px #294b3510;
+}
+
+.modern-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 18px;
+}
+
+.modern-icon {
+  display: grid;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 13px;
+  background: #e0f2e6;
+  color: #347452;
+  font-size: 22px;
+}
+
+.modern-section-heading h2 {
+  margin: 0;
+  color: #254d40;
+  font-size: 19px;
+}
+
+.modern-body-text,
+.modern-timeline p {
+  color: #587268;
+  font-size: 14px;
+  line-height: 1.85;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.modern-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modern-skills span {
+  padding: 9px 13px;
+  border: 1px solid #e0eee4;
+  border-radius: 10px;
+  background: #f0f7f1;
+  color: #38634d;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.modern-timeline {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #dcebe0;
+}
+
+.modern-timeline-dot {
+  position: absolute;
+  top: 5px;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #4b9970;
+}
+
+.modern-timeline p {
+  margin: 0;
+}
+
+.modern-project-list {
+  display: grid;
+  gap: 18px;
+}
+
+.modern-project-item {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  align-items: start;
+  gap: 15px;
+}
+
+.modern-project-art {
+  display: grid;
+  min-height: 86px;
+  place-items: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #d8efe0, #f0f6f0);
+  color: #397754;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.modern-project-item h3 {
+  margin: 3px 0 7px;
+  color: #2c5143;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.modern-project-item p {
+  margin: 0 0 10px;
+  color: #6b8177;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.modern-project-tag {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #edf5ef;
+  color: #426c53;
+  font-size: 12px;
+}
+
+.modern-contact-list p {
+  color: #587268;
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.modern-contact-list a {
+  color: #347452;
+  overflow-wrap: anywhere;
+}
+
+.modern-highlight {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 110px;
+  margin: 0 10px 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  background: #eff7f0;
+}
+
+.modern-highlight strong {
+  color: #28664c;
+  font-size: 28px;
+}
+
+.modern-highlight span,
+.modern-highlight-note {
+  color: #668073;
+  font-size: 12px;
+}
+
+.modern-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 24px 6%;
+  background: #e6f0e7;
+  color: #587268;
+  font-size: 13px;
+}
+
+.modern-bottom-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 22px;
+}
+
+.modern-bottom-actions a,
+.modern-empty a {
+  color: #28664c;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.modern-empty {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .modern-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-sidebar {
+    display: none;
+  }
+
+  .modern-hero {
+    grid-template-columns: 140px minmax(0, 1fr);
+  }
+
+  .modern-photo-wrap {
+    width: 130px;
+    height: 130px;
+  }
+
+  .modern-hero-decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .modern-nav {
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  .modern-nav-links {
+    order: 3;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .modern-print {
+    font-size: 12px;
+  }
+
+  .modern-layout {
+    margin: 12px auto;
+    padding: 0 12px;
+  }
+
+  .modern-hero {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 18px;
+    padding: 25px;
+  }
+
+  .modern-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-card {
+    padding: 19px;
+  }
+
+  .modern-project-item {
+    grid-template-columns: 75px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .modern-project-art {
+    min-height: 75px;
+  }
+
+  .modern-footer {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .modern-nav-links,
+  .modern-print,
+  .modern-sidebar,
+  .modern-bottom-actions {
+    display: none !important;
+  }
+
+  .modern-layout {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modern-hero,
+  .modern-card {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+
+  .modern-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .modern-page {
+    background: white;
+  }
+}

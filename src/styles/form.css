@@ -1,0 +1,151 @@
+
+.form-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f5f0ff;
+  color: #30234a;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px #38205b12;
+}
+
+.form-back {
+  color: #7850c8;
+  text-decoration: none;
+}
+
+.form-container h1 {
+  margin: 24px 0 8px;
+  font-size: 32px;
+}
+
+.form-subtitle {
+  margin-bottom: 28px;
+  color: #71677f;
+  line-height: 1.6;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container label {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ded5ed;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: 2px solid #bca2f4;
+  border-color: #7850c8;
+}
+
+.form-container button {
+  margin-top: 24px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #7850c8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #6138b1;
+}
+
+.form-container button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.form-error {
+  padding: 12px 14px;
+  border: 1px solid #f0c6d0;
+  border-radius: 9px;
+  color: #9c2947;
+  background: #fff5f7;
+  line-height: 1.5;
+}
+
+.form-manage-link {
+  margin-top: 10px;
+  color: #7850c8;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.profile-upload {
+  margin: 10px 0 20px;
+}
+
+.profile-image-preview,
+.profile-image-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.profile-image-preview {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #ddd;
+}
+
+.profile-image-placeholder {
+  border: 2px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #777;
+}
+
+.upload-symbol {
+  font-size: 28px;
+}
+
+.profile-upload input[type="file"] {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 8px 0;
+}
+
+.profile-upload-help {
+  font-size: 13px;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 22px;
+  }
+
+  .form-container h1 {
+    font-size: 26px;
+  }
+}

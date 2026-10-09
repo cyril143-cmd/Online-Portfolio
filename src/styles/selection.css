@@ -1,0 +1,380 @@
+.selection-page {
+  min-height: 100vh;
+  padding: 48px 24px 64px;
+  background: #f7f5fb;
+  color: #30234a;
+}
+
+.selection-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.selection-back {
+  color: #7850c8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.selection-heading {
+  margin: 52px 0 36px;
+  text-align: center;
+}
+
+.selection-heading > p,
+.template-number {
+  color: #7850c8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.selection-heading h1 {
+  margin: 10px 0;
+  font-size: clamp(32px, 5vw, 46px);
+  letter-spacing: -1px;
+}
+
+.selection-heading span {
+  color: #71677f;
+}
+
+.template-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.template-option {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e9e2f2;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 12px 36px #38205b0d;
+}
+
+.template-preview {
+  height: 240px;
+  padding: 18px;
+  background: #eee9ff;
+}
+
+.mini-page {
+  height: 100%;
+  overflow: hidden;
+  padding: 12px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 6px 18px #32234a18;
+}
+
+.mini-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eeeaf3;
+}
+
+.mini-logo,
+.mini-nav-dots,
+.mini-eyebrow,
+.mini-section b,
+.mini-projects b {
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.mini-nav-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.mini-nav-dots i {
+  width: 15px;
+  height: 3px;
+  border-radius: 4px;
+  background: #ded8e9;
+}
+
+.mini-hero {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 3px 10px;
+}
+
+.mini-avatar {
+  display: grid;
+  width: 46px;
+  height: 52px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 14px 14px 22px 14px;
+  color: white;
+  background: linear-gradient(145deg, #a994ec, #7158bd);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.mini-intro {
+  display: grid;
+  gap: 4px;
+}
+
+.mini-eyebrow {
+  color: #8469cc;
+  font-size: 5px;
+}
+
+.mini-intro strong {
+  font-size: 13px;
+}
+
+.mini-intro > span:last-child {
+  color: #80788d;
+  font-size: 6px;
+}
+
+.mini-lower {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 0 3px;
+}
+
+.mini-section,
+.mini-projects {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #eeeaf3;
+  border-radius: 6px;
+}
+
+.mini-section > span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: 6px;
+  border-radius: 3px;
+  background: #e9e5ef;
+}
+
+.mini-section > span.short {
+  width: 65%;
+}
+
+.mini-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-top: 7px;
+}
+
+.mini-pills i {
+  width: 20px;
+  height: 7px;
+  border-radius: 6px;
+  background: #e9e1ff;
+}
+
+.mini-projects {
+  grid-column: 1 / -1;
+}
+
+.mini-projects > div {
+  display: flex;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.mini-projects i {
+  height: 27px;
+  flex: 1;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #e6ddff, #f4e8f2);
+}
+
+.preview-simple {
+  background: #edf2ed;
+}
+
+.preview-simple .mini-page {
+  border-radius: 2px;
+  font-family: Georgia, serif;
+}
+
+.preview-simple .mini-avatar {
+  border-radius: 50%;
+  background: #668673;
+}
+
+.preview-simple .mini-logo,
+.preview-simple .mini-section b,
+.preview-simple .mini-projects b {
+  color: #486752;
+}
+
+.preview-simple .mini-section,
+.preview-simple .mini-projects {
+  border-radius: 2px;
+}
+
+.preview-simple .mini-pills i {
+  border-radius: 2px;
+  background: #dbe8dc;
+}
+
+.preview-modern {
+  background: #e9e6ff;
+}
+
+.preview-modern .mini-hero {
+  margin: 5px -4px 8px;
+  padding: 11px 8px;
+  border-radius: 7px;
+  color: white;
+  background: linear-gradient(115deg, #6451bd, #9a81ee);
+}
+
+.preview-modern .mini-eyebrow,
+.preview-modern .mini-intro > span:last-child {
+  color: #e4dcff;
+}
+
+.preview-modern .mini-section,
+.preview-modern .mini-projects {
+  border: 0;
+  background: #f8f6ff;
+  box-shadow: 0 3px 9px #6551bd16;
+}
+
+.preview-modern .mini-pills i {
+  background: #dcd3ff;
+}
+
+.preview-modern .mini-projects i:first-child {
+  background: linear-gradient(135deg, #a8d9d6, #d8eeeb);
+}
+
+.preview-creative {
+  background: #f6e7ee;
+}
+
+.preview-creative .mini-page {
+  position: relative;
+  border-radius: 16px 4px 16px 4px;
+  background: #fffaf6;
+}
+
+.preview-creative .mini-page::after {
+  position: absolute;
+  top: 40px;
+  right: -13px;
+  width: 48px;
+  height: 48px;
+  border: 7px solid #edd7ef;
+  border-radius: 50%;
+  content: "";
+}
+
+.preview-creative .mini-avatar {
+  border-radius: 52% 40% 48% 32%;
+  background: linear-gradient(145deg, #e58cb2, #8b6cbe);
+}
+
+.preview-creative .mini-logo,
+.preview-creative .mini-section b,
+.preview-creative .mini-projects b {
+  color: #8b5d85;
+}
+
+.preview-creative .mini-projects i:nth-child(2) {
+  background: linear-gradient(135deg, #f3d6a4, #eeacc6);
+}
+
+.template-option-info {
+  padding: 21px 22px 24px;
+}
+
+.template-number {
+  margin: 0 0 8px;
+}
+
+.template-option-info h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.template-option-info > p:not(.template-number) {
+  min-height: 44px;
+  margin: 0 0 16px;
+  color: #71677f;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.template-option-info button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 15px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background: #7850c8;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.template-option-info button:hover {
+  background: #6138b1;
+}
+
+.option-simple .template-number {
+  color: #55735e;
+}
+
+.option-simple .template-option-info button {
+  background: #55735e;
+}
+
+.option-modern .template-number {
+  color: #6551bd;
+}
+
+.option-creative .template-number {
+  color: #a45e87;
+}
+
+.option-creative .template-option-info button {
+  background: #a45e87;
+}
+
+@media (max-width: 900px) {
+  .template-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .selection-page {
+    padding: 32px 18px 45px;
+  }
+
+  .selection-heading {
+    margin: 40px 0 28px;
+  }
+
+  .template-options {
+    grid-template-columns: 1fr;
+  }
+
+  .template-preview {
+    height: 225px;
+  }
+}
